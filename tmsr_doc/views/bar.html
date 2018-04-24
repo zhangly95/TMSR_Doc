@@ -326,7 +326,7 @@ option = {
         type: 'bar',
         barGap: 0,
         label: labelOption,
-        data: [320, 332, 301, 334, 390]
+        data: [320, 332, 301, 334, 390],
     },
     {
         name: '已提交',
@@ -345,6 +345,12 @@ option = {
 }
 
 myChart.setOption(option);
+myChart.on('click', function (params) {
+ 
+           // window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(params.name));
+           window.open('/table')
+    }
+   );
 </script>
 <!-- Bootstrap core JavaScript-->
 <script src="vendor/jquery/jquery.min.js"></script>

@@ -275,7 +275,7 @@
     var myChart = echarts.init(document.getElementById('main'));
     var data = [{
         name: '总体性文件',
-        link:'www.labulador.cn',
+        link:'/table',
         itemStyle: {
             
             color: '#F25554'
@@ -437,6 +437,12 @@
         }
     };
     myChart.setOption(option);
+    myChart.on('click', function (params) {
+ 
+ // window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(params.name));
+ window.open('/table')
+}
+);
 </script>
 <!-- Bootstrap core JavaScript-->
 <script src="vendor/jquery/jquery.min.js"></script>
